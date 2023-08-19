@@ -30,6 +30,8 @@ class Solution {
             }
             
             //ab is node ke sare adj wlo me jaao
+            // isme & lagana imp hai warna childPair.first = -1 work hi nhi karega
+            // and apan same node bar bar acces krenge aur infinite loop me fas jayenge!!
             for (auto &childPair : adj[currv]){
                 int childV = childPair.first, edgeColorOfChild = childPair.second;
                 //agr iska child exist krta hai and wo start wala na ho and uska path color current
