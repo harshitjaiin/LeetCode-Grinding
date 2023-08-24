@@ -1,1 +1,1 @@
-​
+The main issue here with doing a simple recursive plus dynamic programming solution is that, if Zero exists in the array, but it is not reachable. Then the recursion will go on a rtle. That is, it will just run for infinite number of times. So therefore, we need to think in some other direction. And that is when the idea of using a queue strikes
