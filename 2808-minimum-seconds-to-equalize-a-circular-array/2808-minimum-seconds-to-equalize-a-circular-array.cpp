@@ -21,6 +21,8 @@ public:
                max_time[nums[i]] = max(max_time[nums[i]] , time);
             }
             //THIS MEANS we are storing this first time interaction with this element
+            //we are updating this everytime bcz we want all possible segments b/w the same 
+            //elements!!
             last[nums[i]]=i;
         }
         for(auto&x:max_time)ans = min(ans,x.second);
